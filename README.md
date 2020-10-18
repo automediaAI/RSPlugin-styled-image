@@ -2,7 +2,7 @@
 A simple React Studio plugin for a styled image tag
 
 # Instructions
-1. Download from [here]()
+1. Download from [here](https://github.com/automediaAI/RSPlugin-styled-image/releases/download/v1.0/styled-image.plugin.zip)
 2. Access 'Components Plugin' folder from: React Studio Menu > Plugins > Show Plugin Manager > Show Plugins folder in Finder
 3. Unzip and paste .plugin file in this folder
 4. Click 'Reload Plugins' from Plugin Menu
@@ -13,8 +13,8 @@ A simple React Studio plugin for a styled image tag
 ### For the image URL, you can 
 1. Put the image URL in a data slot and data slot in the Plugin Parameters under Source URL, or
 2. You can select the data slot under the Data tab under Data Runtime Linkage, or
-3. You can have the image URL as part of a data sheet and select the data sheet column under Data Runtime Linkage as well, [as seen here]()
-	1. Please note that if you want to select a data sheet, you'll have to Carry the data sheet properties at the screen level as seen [here]()
+3. You can have the image URL as part of a data sheet and select the data sheet column under Data Runtime Linkage as well, [as seen here](https://raw.githubusercontent.com/automediaAI/RSPlugin-styled-image/main/column_selection.png)
+	1. Please note that if you want to select a data sheet, you'll have to Carry the data sheet properties at the screen level as seen [here](https://raw.githubusercontent.com/automediaAI/RSPlugin-styled-image/main/sheet_selection.png)
 
 ### For the image style properties, similary, you can
 1. Put the image style in the text block provided in the Plugin Parameters under the Style section
@@ -27,13 +27,15 @@ A simple React Studio plugin for a styled image tag
 	4. A very good tool to convert traditional CSS to CSS-in-JS is [CSS2JS found here](https://css2js.dotenv.dev/)
 2. Alternatively, you can place the style in a data slot, or in a data sheet and pass it in the Data Runtime Linkage tab as well, as explained above.
 
+#### Please note that the Data Runtime Linkage properties will override the Plugin Parameters, so that if you have all the properties set, the Data Runtime Linkage will be the ones that will be used.
+
 # Logic behind building this Plugin
 React Studio's own Image component is pretty powerful. However, it lacks pure CSS styling, which we need to do image centering and other styling. We decided to build this for that niche purpose, though we suspect that the React Studio team will one day allow pure CSS-in-JS styling on their default image component, thereby removing the need for this plugin. Since it mainly supports CSS and none of the other awesome features that the default Image component ships with, please use it only when you need to specifically target some CSS styling that's not available by default.
 
 # Dependencies
 Unlike our other plugins, there are no external dependencies in this one. All that we're exposing is React's own CSS-in-JS feature set to React Studio.
 
-![Plugin running in React Studio]()
+![Plugin running in React Studio](https://raw.githubusercontent.com/automediaAI/RSPlugin-styled-image/main/screenshot.png)
 
 # Credits
 Logo from [Icon Library](https://icon-library.com/icon/width-icon-3.html)
